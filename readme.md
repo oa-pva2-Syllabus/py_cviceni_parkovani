@@ -171,6 +171,34 @@ Uživatel musí být při zadávání jasně informován, jaký formát má pou�
 
 ---
 
+## Odevzdávání
+Práci odevzdáváš **průběžně přes Git**. Cílem je, aby z historie repozitáře byl jasně vidět postup (co přibylo, co se opravilo, kdy ses posunul).
+
+**Pravidla odevzdávání:**
+- Po dokončení **každé funkce / logického kroku** proveď commit (tj. ne jeden commit na konci).
+- **Minimální očekávání:** alespoň 8–12 commitů (menu, validace vstupů, práce s časem, výpočet ceny, založení výpůjčky, ukončení výpůjčky, výpis aktivních, denní souhrn, logování, opravy chyb).
+- Každý commit musí mít **smysluplnou zprávu** (např. `Add time parsing`, `Implement price calculation`, `Handle invalid SPZ`), ne `update` / `final` apod.
+- Commity dělej tak, aby projekt byl po každém commitu v rozumném stavu (ideálně spustitelný).
+
+**Zákazy:**
+- Je zakázáno odevzdat projekt jako „hotové všechno najednou“ v jednom nebo pár commitech.
+- Je zakázáno nahrávat zdrojáky přes webové rozhraní GitHubu („Upload files“, editace souborů v prohlížeči). Odevzdání musí probíhat přes Git z počítače (commit + push).
+- Pokud bude historie commitů nepoužitelná (např. 1–2 commity na konci, nebo upload přes GitHub), bude to hodnoceno jako **nesplnění požadavků na odevzdání**.
+
+**Doporučené členění commitů (příklad):**
+1. Skeleton projektu + hlavní smyčka menu  
+2. Validace SPZ  
+3. Načítání a parsování času (datetime)  
+4. Výpočet délky parkování  
+5. Výpočet ceny dle tarifu  
+6. Zahájení parkování  
+7. Ukončení parkování + výstupní shrnutí  
+8. Výpis aktivních parkování (včetně „kolik běží“)  
+9. Denní souhrn  
+10. Logování + ošetření chyb + úklid/refaktor
+
+---
+
 ## Hodnocení
 - Funkce jsou smysluplné, program není „jeden velký blok“.
 - Chyby jsou ošetřené, program nespadne.
